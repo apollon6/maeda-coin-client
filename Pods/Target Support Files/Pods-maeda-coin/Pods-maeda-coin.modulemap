@@ -1,0 +1,6 @@
+framework module Pods_maeda_coin {
+  umbrella header "Pods-maeda-coin-umbrella.h"
+
+  export *
+  module * { export * }
+}

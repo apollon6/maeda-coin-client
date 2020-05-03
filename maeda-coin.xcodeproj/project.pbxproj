@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA5AB127245F244800AC1C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5AB126245F244800AC1C0C /* AppDelegate.swift */; };
+		CA5AB129245F244800AC1C0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5AB128245F244800AC1C0C /* SceneDelegate.swift */; };
+		CA5AB12B245F244800AC1C0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5AB12A245F244800AC1C0C /* ViewController.swift */; };
+		CA5AB12E245F244800AC1C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5AB12C245F244800AC1C0C /* Main.storyboard */; };
+		CA5AB130245F244A00AC1C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5AB12F245F244A00AC1C0C /* Assets.xcassets */; };
+		CA5AB133245F244A00AC1C0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5AB131245F244A00AC1C0C /* LaunchScreen.storyboard */; };
+		CA5AB13F245F42E200AC1C0C /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5AB13E245F42E200AC1C0C /* RegisterUserViewController.swift */; };
+		CAF3BEC2245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BEC1245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift */; };
+		CAF3BEC6245F57B5005E0C4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BEC5245F57B5005E0C4A /* LoginViewController.swift */; };
+		CAF3BEC8245F5F7B005E0C4A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BEC7245F5F7B005E0C4A /* TopViewController.swift */; };
+		D3851FD10B1C2F8282AB7853 /* Pods_maeda_coin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991D0F2B590F4BEA5530E6F4 /* Pods_maeda_coin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		57993E288B1F931047F32456 /* Pods-maeda-coin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maeda-coin.release.xcconfig"; path = "Target Support Files/Pods-maeda-coin/Pods-maeda-coin.release.xcconfig"; sourceTree = "<group>"; };
+		991D0F2B590F4BEA5530E6F4 /* Pods_maeda_coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maeda_coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A469F928499867DECBD670BC /* Pods-maeda-coin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maeda-coin.debug.xcconfig"; path = "Target Support Files/Pods-maeda-coin/Pods-maeda-coin.debug.xcconfig"; sourceTree = "<group>"; };
+		CA5AB123245F244800AC1C0C /* maeda-coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "maeda-coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5AB126245F244800AC1C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA5AB128245F244800AC1C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CA5AB12A245F244800AC1C0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA5AB12D245F244800AC1C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA5AB12F245F244A00AC1C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA5AB132245F244A00AC1C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA5AB134245F244A00AC1C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5AB13E245F42E200AC1C0C /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		CAF3BEC1245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberAuthenicationViewController.swift; sourceTree = "<group>"; };
+		CAF3BEC5245F57B5005E0C4A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CAF3BEC7245F5F7B005E0C4A /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA5AB120245F244800AC1C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3851FD10B1C2F8282AB7853 /* Pods_maeda_coin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EBA421DAAA592565A65472C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A469F928499867DECBD670BC /* Pods-maeda-coin.debug.xcconfig */,
+				57993E288B1F931047F32456 /* Pods-maeda-coin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A99544B43807205A81C98A39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991D0F2B590F4BEA5530E6F4 /* Pods_maeda_coin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA5AB11A245F244700AC1C0C = {
+			isa = PBXGroup;
+			children = (
+				CA5AB125245F244800AC1C0C /* maeda-coin */,
+				CA5AB124245F244800AC1C0C /* Products */,
+				0EBA421DAAA592565A65472C /* Pods */,
+				A99544B43807205A81C98A39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA5AB124245F244800AC1C0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA5AB123245F244800AC1C0C /* maeda-coin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA5AB125245F244800AC1C0C /* maeda-coin */ = {
+			isa = PBXGroup;
+			children = (
+				CA5AB126245F244800AC1C0C /* AppDelegate.swift */,
+				CA5AB128245F244800AC1C0C /* SceneDelegate.swift */,
+				CA5AB12A245F244800AC1C0C /* ViewController.swift */,
+				CAF3BEC5245F57B5005E0C4A /* LoginViewController.swift */,
+				CA5AB13E245F42E200AC1C0C /* RegisterUserViewController.swift */,
+				CAF3BEC1245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift */,
+				CAF3BEC7245F5F7B005E0C4A /* TopViewController.swift */,
+				CA5AB12C245F244800AC1C0C /* Main.storyboard */,
+				CA5AB12F245F244A00AC1C0C /* Assets.xcassets */,
+				CA5AB131245F244A00AC1C0C /* LaunchScreen.storyboard */,
+				CA5AB134245F244A00AC1C0C /* Info.plist */,
+			);
+			path = "maeda-coin";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA5AB122245F244800AC1C0C /* maeda-coin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA5AB137245F244A00AC1C0C /* Build configuration list for PBXNativeTarget "maeda-coin" */;
+			buildPhases = (
+				D913136222284A7F75B402D0 /* [CP] Check Pods Manifest.lock */,
+				CA5AB11F245F244800AC1C0C /* Sources */,
+				CA5AB120245F244800AC1C0C /* Frameworks */,
+				CA5AB121245F244800AC1C0C /* Resources */,
+				E026AB573A1B30AAB2B806A6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "maeda-coin";
+			productName = "maeda-coin";
+			productReference = CA5AB123245F244800AC1C0C /* maeda-coin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA5AB11B245F244700AC1C0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = himawari;
+				TargetAttributes = {
+					CA5AB122245F244800AC1C0C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CA5AB11E245F244700AC1C0C /* Build configuration list for PBXProject "maeda-coin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA5AB11A245F244700AC1C0C;
+			productRefGroup = CA5AB124245F244800AC1C0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA5AB122245F244800AC1C0C /* maeda-coin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA5AB121245F244800AC1C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5AB133245F244A00AC1C0C /* LaunchScreen.storyboard in Resources */,
+				CA5AB130245F244A00AC1C0C /* Assets.xcassets in Resources */,
+				CA5AB12E245F244800AC1C0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D913136222284A7F75B402D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maeda-coin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E026AB573A1B30AAB2B806A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maeda-coin/Pods-maeda-coin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maeda-coin/Pods-maeda-coin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-maeda-coin/Pods-maeda-coin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA5AB11F245F244800AC1C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF3BEC6245F57B5005E0C4A /* LoginViewController.swift in Sources */,
+				CA5AB13F245F42E200AC1C0C /* RegisterUserViewController.swift in Sources */,
+				CA5AB12B245F244800AC1C0C /* ViewController.swift in Sources */,
+				CAF3BEC2245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift in Sources */,
+				CA5AB127245F244800AC1C0C /* AppDelegate.swift in Sources */,
+				CA5AB129245F244800AC1C0C /* SceneDelegate.swift in Sources */,
+				CAF3BEC8245F5F7B005E0C4A /* TopViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA5AB12C245F244800AC1C0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA5AB12D245F244800AC1C0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA5AB131245F244A00AC1C0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA5AB132245F244A00AC1C0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA5AB135245F244A00AC1C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA5AB136245F244A00AC1C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA5AB138245F244A00AC1C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A469F928499867DECBD670BC /* Pods-maeda-coin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YW65XK3UJ9;
+				INFOPLIST_FILE = "maeda-coin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.himawari.maeda-coin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CA5AB139245F244A00AC1C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57993E288B1F931047F32456 /* Pods-maeda-coin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YW65XK3UJ9;
+				INFOPLIST_FILE = "maeda-coin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.himawari.maeda-coin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA5AB11E245F244700AC1C0C /* Build configuration list for PBXProject "maeda-coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5AB135245F244A00AC1C0C /* Debug */,
+				CA5AB136245F244A00AC1C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA5AB137245F244A00AC1C0C /* Build configuration list for PBXNativeTarget "maeda-coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5AB138245F244A00AC1C0C /* Debug */,
+				CA5AB139245F244A00AC1C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA5AB11B245F244700AC1C0C /* Project object */;
+}

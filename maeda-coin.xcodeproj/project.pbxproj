@@ -17,6 +17,10 @@
 		CAF3BEC2245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BEC1245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift */; };
 		CAF3BEC6245F57B5005E0C4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BEC5245F57B5005E0C4A /* LoginViewController.swift */; };
 		CAF3BEC8245F5F7B005E0C4A /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BEC7245F5F7B005E0C4A /* TopViewController.swift */; };
+		CAF3BECD245FB7AE005E0C4A /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BECC245FB7AE005E0C4A /* LoginUser.swift */; };
+		CAF3BED2245FD8C7005E0C4A /* RegisterUserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BED1245FD8C7005E0C4A /* RegisterUserInformation.swift */; };
+		CAF3BED42460465B005E0C4A /* FrontAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BED32460465B005E0C4A /* FrontAPICaller.swift */; };
+		CAF3BED624605560005E0C4A /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF3BED524605560005E0C4A /* NavigationViewController.swift */; };
 		D3851FD10B1C2F8282AB7853 /* Pods_maeda_coin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991D0F2B590F4BEA5530E6F4 /* Pods_maeda_coin.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,10 @@
 		CAF3BEC1245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberAuthenicationViewController.swift; sourceTree = "<group>"; };
 		CAF3BEC5245F57B5005E0C4A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CAF3BEC7245F5F7B005E0C4A /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		CAF3BECC245FB7AE005E0C4A /* LoginUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
+		CAF3BED1245FD8C7005E0C4A /* RegisterUserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserInformation.swift; sourceTree = "<group>"; };
+		CAF3BED32460465B005E0C4A /* FrontAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontAPICaller.swift; sourceTree = "<group>"; };
+		CAF3BED524605560005E0C4A /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +78,10 @@
 		CA5AB11A245F244700AC1C0C = {
 			isa = PBXGroup;
 			children = (
-				CA5AB125245F244800AC1C0C /* maeda-coin */,
-				CA5AB124245F244800AC1C0C /* Products */,
-				0EBA421DAAA592565A65472C /* Pods */,
 				A99544B43807205A81C98A39 /* Frameworks */,
+				CA5AB125245F244800AC1C0C /* maeda-coin */,
+				0EBA421DAAA592565A65472C /* Pods */,
+				CA5AB124245F244800AC1C0C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,19 +96,47 @@
 		CA5AB125245F244800AC1C0C /* maeda-coin */ = {
 			isa = PBXGroup;
 			children = (
+				CA5AB134245F244A00AC1C0C /* Info.plist */,
 				CA5AB126245F244800AC1C0C /* AppDelegate.swift */,
 				CA5AB128245F244800AC1C0C /* SceneDelegate.swift */,
 				CA5AB12A245F244800AC1C0C /* ViewController.swift */,
+				CA5AB12F245F244A00AC1C0C /* Assets.xcassets */,
+				CA5AB131245F244A00AC1C0C /* LaunchScreen.storyboard */,
+				CA5AB12C245F244800AC1C0C /* Main.storyboard */,
+				CAF3BEC9245FB6FD005E0C4A /* Models */,
+				CAF3BECF245FBB53005E0C4A /* Modules */,
+				CAF3BED0245FBD10005E0C4A /* Utilities */,
+			);
+			path = "maeda-coin";
+			sourceTree = "<group>";
+		};
+		CAF3BEC9245FB6FD005E0C4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAF3BED1245FD8C7005E0C4A /* RegisterUserInformation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAF3BECF245FBB53005E0C4A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CAF3BED524605560005E0C4A /* NavigationViewController.swift */,
 				CAF3BEC5245F57B5005E0C4A /* LoginViewController.swift */,
 				CA5AB13E245F42E200AC1C0C /* RegisterUserViewController.swift */,
 				CAF3BEC1245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift */,
 				CAF3BEC7245F5F7B005E0C4A /* TopViewController.swift */,
-				CA5AB12C245F244800AC1C0C /* Main.storyboard */,
-				CA5AB12F245F244A00AC1C0C /* Assets.xcassets */,
-				CA5AB131245F244A00AC1C0C /* LaunchScreen.storyboard */,
-				CA5AB134245F244A00AC1C0C /* Info.plist */,
 			);
-			path = "maeda-coin";
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CAF3BED0245FBD10005E0C4A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CAF3BECC245FB7AE005E0C4A /* LoginUser.swift */,
+				CAF3BED32460465B005E0C4A /* FrontAPICaller.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +255,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAF3BEC6245F57B5005E0C4A /* LoginViewController.swift in Sources */,
+				CAF3BED624605560005E0C4A /* NavigationViewController.swift in Sources */,
+				CAF3BED2245FD8C7005E0C4A /* RegisterUserInformation.swift in Sources */,
 				CA5AB13F245F42E200AC1C0C /* RegisterUserViewController.swift in Sources */,
+				CAF3BED42460465B005E0C4A /* FrontAPICaller.swift in Sources */,
 				CA5AB12B245F244800AC1C0C /* ViewController.swift in Sources */,
+				CAF3BECD245FB7AE005E0C4A /* LoginUser.swift in Sources */,
 				CAF3BEC2245F490B005E0C4A /* PhoneNumberAuthenicationViewController.swift in Sources */,
 				CA5AB127245F244800AC1C0C /* AppDelegate.swift in Sources */,
 				CA5AB129245F244800AC1C0C /* SceneDelegate.swift in Sources */,
@@ -372,6 +412,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW65XK3UJ9;
 				INFOPLIST_FILE = "maeda-coin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW65XK3UJ9;
 				INFOPLIST_FILE = "maeda-coin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

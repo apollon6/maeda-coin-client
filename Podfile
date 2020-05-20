@@ -7,5 +7,7 @@ target 'maeda-coin' do
 
   # Pods for maeda-coin
   pod 'Alamofire', '~> 5.0'
+  pod "SwiftyJSON"
+  pod "PromiseKit", "~> 6.8"
 
 end

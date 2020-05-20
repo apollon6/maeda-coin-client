@@ -13,8 +13,14 @@ class TopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        /* ログイン画面では戻るボタンを表示しないように制御 */
+        /* Top画面では戻るボタンを表示しないように制御 */
         self.navigationItem.hidesBackButton = true
+        
+        /* 残高照会APIを呼び出し */
+        
+        let loginUser = LoginUser.instance
+        guard let userId = loginUser.userId else { return }
+        print(userId)
     }
 
 }

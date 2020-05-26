@@ -52,13 +52,10 @@ class PhoneNumberAuthenicationViewController: UIViewController {
         
         let alert: UIAlertController = UIAlertController(title: "完了しました。", message: "ユーザー登録が完了しました。", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{(action: UIAlertAction!) in
-            let loginViewController = self.storyboard!.instantiateViewController(withIdentifier: "LoginViewController")
-            self.show(loginViewController, sender: nil)
-           }
-        )
+            self.navigationController?.popToRootViewController(animated: true)
+        })
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-    
     
 }

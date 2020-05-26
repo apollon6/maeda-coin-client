@@ -34,9 +34,7 @@ class RegisterUserViewController: UIViewController {
     }
     
     @IBAction func pushRegister(_ sender: Any) {
-        print("pushRegister")
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         /* 遷移先のViewControllerを取得 */
@@ -53,4 +51,5 @@ class RegisterUserViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+
 }

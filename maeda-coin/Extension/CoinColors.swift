@@ -13,6 +13,10 @@ extension UIColor{
     class func White() -> UIColor {
         return UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
     }
+    
+    class func Black1() -> UIColor {
+        return UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1)
+    }
 
     class func Pink1() -> UIColor {
         return UIColor(red: 255/255, green: 243/255, blue: 247/255, alpha: 1)

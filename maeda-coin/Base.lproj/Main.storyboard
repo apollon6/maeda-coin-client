@@ -312,11 +312,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="決済先店舗名の表示用ラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhg-N5-WBi">
                                 <rect key="frame" x="20" y="64" width="374" height="16"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-wL-DD7">
-                                <rect key="frame" x="25" y="214" width="364" height="60"/>
+                                <rect key="frame" x="25" y="212" width="364" height="60"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="gov-4U-osr"/>
@@ -330,13 +330,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支払い金額（税込）を入力してください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="883-ai-gYI">
-                                <rect key="frame" x="20" y="106" width="303" height="16"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                <rect key="frame" x="20" y="106" width="265" height="14"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bST-oU-DlA">
-                                <rect key="frame" x="20" y="130" width="374" height="34"/>
+                                <rect key="frame" x="20" y="128" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>

@@ -16,7 +16,9 @@ class ScanSettlementQRCodeViewController: UIViewController, QRScannerViewDelegat
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         let qrScannerView = QRScannerView(frame: view.bounds)
         view.addSubview(qrScannerView)
         qrScannerView.configure(delegate: self)
@@ -29,6 +31,7 @@ class ScanSettlementQRCodeViewController: UIViewController, QRScannerViewDelegat
 
     func qrScannerView(_ qrScannerView: QRScannerView, didSuccess code: String) {
         print(code)
+        qrScannerView.stopRunning()
         
         /* QRコードの妥当性チェック */
         

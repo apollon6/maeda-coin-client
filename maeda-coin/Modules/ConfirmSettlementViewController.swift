@@ -12,13 +12,25 @@ class ConfirmSettlementViewController: UIViewController {
     
     var address: String?
     
-    @IBOutlet weak var addressLabel: UILabel!
-
+    /* 決済先店舗名 */
+    @IBOutlet weak var storeName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        addressLabel.text = address
+        /* 決済先情報取得APIを呼び出し */
+        
     }
-
+    
+    @IBAction func pushPay(_ sender: Any) {
+    }
+    
+    /* TextField以外の部分を押した時にキーボードを閉じる */
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    deinit {
+        print("ConfirmSettlementViewController Destroyed.")
+    }
 }

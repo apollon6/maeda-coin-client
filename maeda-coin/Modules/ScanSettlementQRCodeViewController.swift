@@ -14,6 +14,9 @@ class ScanSettlementQRCodeViewController: UIViewController, QRScannerViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
         let qrScannerView = QRScannerView(frame: view.bounds)
         view.addSubview(qrScannerView)
         qrScannerView.configure(delegate: self)
@@ -27,7 +30,6 @@ class ScanSettlementQRCodeViewController: UIViewController, QRScannerViewDelegat
     func qrScannerView(_ qrScannerView: QRScannerView, didSuccess code: String) {
         print(code)
         
-        
         /* QRコードの妥当性チェック */
         
         /* チェックOKだったら確認画面に遷移 */
@@ -35,6 +37,10 @@ class ScanSettlementQRCodeViewController: UIViewController, QRScannerViewDelegat
         let nextView = storyboard.instantiateViewController(withIdentifier: "ConfirmSettlementViewController") as! ConfirmSettlementViewController
         nextView.address = code
         nextView.modalPresentationStyle = .fullScreen
-        self.present(nextView, animated: true)
+        self.navigationController?.pushViewController(nextView, animated: true)
+    }
+    
+    deinit {
+        print("ScanSettlementQRCodeViewController Destroyed.")
     }
 }

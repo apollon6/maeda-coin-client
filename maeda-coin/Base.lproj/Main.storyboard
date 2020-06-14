@@ -265,7 +265,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="支払う"/>
                                 <connections>
-                                    <segue destination="odk-xI-pke" kind="presentation" modalPresentationStyle="fullScreen" id="C82-T3-ot7"/>
+                                    <segue destination="odk-xI-pke" kind="show" id="C82-T3-ot7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -280,7 +280,7 @@
             </objects>
             <point key="canvasLocation" x="1869.5652173913045" y="799.72826086956525"/>
         </scene>
-        <!--Scan SettlementQR Code View Controller-->
+        <!--読み取り-->
         <scene sceneID="IJ6-TX-ZmN">
             <objects>
                 <viewController id="odk-xI-pke" customClass="ScanSettlementQRCodeViewController" customModule="maeda_coin" customModuleProvider="target" sceneMemberID="viewController">
@@ -290,12 +290,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vti-HP-YAn"/>
                     </view>
+                    <navigationItem key="navigationItem" title="読み取り" id="9FS-xB-FlQ">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="39D-Gl-gIJ"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="gzf-xp-d4E" kind="show" id="MIE-46-pxm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIG-XX-wMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2667" y="800"/>
         </scene>
-        <!--Confirm Settlement View Controller-->
+        <!--支払い金額の入力-->
         <scene sceneID="RpE-ab-tsn">
             <objects>
                 <viewController storyboardIdentifier="ConfirmSettlementViewController" id="gzf-xp-d4E" customClass="ConfirmSettlementViewController" customModule="maeda_coin" customModuleProvider="target" sceneMemberID="viewController">
@@ -303,19 +309,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhg-N5-WBi">
-                                <rect key="frame" x="41" y="73" width="321" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="決済先店舗名の表示用ラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhg-N5-WBi">
+                                <rect key="frame" x="20" y="64" width="374" height="16"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDo-wL-DD7">
+                                <rect key="frame" x="25" y="214" width="364" height="60"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gov-4U-osr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                <state key="normal" title="支払う">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushPay:" destination="gzf-xp-d4E" eventType="touchUpInside" id="LEK-ok-mo1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支払い金額（税込）を入力してください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="883-ai-gYI">
+                                <rect key="frame" x="20" y="106" width="303" height="16"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bST-oU-DlA">
+                                <rect key="frame" x="20" y="130" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eDo-wL-DD7" firstAttribute="top" secondItem="bST-oU-DlA" secondAttribute="bottom" constant="50" id="599-8M-B5Z"/>
+                            <constraint firstItem="bST-oU-DlA" firstAttribute="leading" secondItem="eSd-nh-bri" secondAttribute="leading" constant="20" id="5eY-Vq-NBk"/>
+                            <constraint firstItem="eDo-wL-DD7" firstAttribute="leading" secondItem="eSd-nh-bri" secondAttribute="leading" constant="25" id="Eaf-uF-IYZ"/>
+                            <constraint firstItem="yhg-N5-WBi" firstAttribute="top" secondItem="eSd-nh-bri" secondAttribute="top" constant="20" id="STq-8t-PSo"/>
+                            <constraint firstItem="883-ai-gYI" firstAttribute="top" secondItem="yhg-N5-WBi" secondAttribute="bottom" constant="26" id="YV7-u7-1jv"/>
+                            <constraint firstItem="bST-oU-DlA" firstAttribute="top" secondItem="883-ai-gYI" secondAttribute="bottom" constant="8" id="bWI-Ro-bl3"/>
+                            <constraint firstItem="yhg-N5-WBi" firstAttribute="leading" secondItem="eSd-nh-bri" secondAttribute="leading" constant="20" id="iFD-tn-LXG"/>
+                            <constraint firstItem="eSd-nh-bri" firstAttribute="trailing" secondItem="eDo-wL-DD7" secondAttribute="trailing" constant="25" id="p56-kb-hYb"/>
+                            <constraint firstItem="eSd-nh-bri" firstAttribute="trailing" secondItem="bST-oU-DlA" secondAttribute="trailing" constant="20" id="rxj-83-z0O"/>
+                            <constraint firstItem="eSd-nh-bri" firstAttribute="trailing" secondItem="yhg-N5-WBi" secondAttribute="trailing" constant="20" id="u0k-04-PcV"/>
+                            <constraint firstItem="883-ai-gYI" firstAttribute="leading" secondItem="eSd-nh-bri" secondAttribute="leading" constant="20" id="yd0-Gk-xWd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eSd-nh-bri"/>
                     </view>
+                    <navigationItem key="navigationItem" title="支払い金額の入力" id="7PB-af-t3m"/>
                     <connections>
-                        <outlet property="addressLabel" destination="yhg-N5-WBi" id="9Dl-tt-00G"/>
+                        <outlet property="storeName" destination="yhg-N5-WBi" id="AL4-7h-ZC9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Udd-qb-L8r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

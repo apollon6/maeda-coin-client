@@ -259,6 +259,16 @@
                     <view key="view" contentMode="scaleToFill" id="1Bo-qp-Vub">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPs-Nm-8zA">
+                                <rect key="frame" x="184" y="251" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="支払う"/>
+                                <connections>
+                                    <segue destination="odk-xI-pke" kind="presentation" modalPresentationStyle="fullScreen" id="C82-T3-ot7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cgJ-hL-yrd"/>
                     </view>
@@ -269,6 +279,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78V-Cv-aXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1869.5652173913045" y="799.72826086956525"/>
+        </scene>
+        <!--Scan SettlementQR Code View Controller-->
+        <scene sceneID="IJ6-TX-ZmN">
+            <objects>
+                <viewController id="odk-xI-pke" customClass="ScanSettlementQRCodeViewController" customModule="maeda_coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PMl-WP-0Dn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vti-HP-YAn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIG-XX-wMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2667" y="800"/>
+        </scene>
+        <!--Confirm Settlement View Controller-->
+        <scene sceneID="RpE-ab-tsn">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmSettlementViewController" id="gzf-xp-d4E" customClass="ConfirmSettlementViewController" customModule="maeda_coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zr7-L6-AWW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhg-N5-WBi">
+                                <rect key="frame" x="41" y="73" width="321" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eSd-nh-bri"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="yhg-N5-WBi" id="9Dl-tt-00G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udd-qb-L8r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428.985507246377" y="799.72826086956525"/>
         </scene>
         <!--SMS認証-->
         <scene sceneID="c33-SS-okg">

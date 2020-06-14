@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5F5FF06D-B18A-44CF-BB08-DCAE7AB90027"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "maeda-coin/Modules/RegisterUserViewController.swift"
@@ -50,6 +50,54 @@
             endingLineNumber = "12"
             landmarkName = "RegisterUserViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5F5FF06D-B18A-44CF-BB08-DCAE7AB90027 - 6ca8713757157e70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maeda_coin.RegisterUserViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; maeda_coin.RegisterUserViewController"
+                  moduleName = "maeda-coin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yukinocist/mypkg/maeda-coin-client/maeda-coin/Modules/RegisterUserViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "5F5FF06D-B18A-44CF-BB08-DCAE7AB90027 - ff864f2e5bf20138"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maeda_coin.RegisterUserViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;maeda_coin.RegisterUserViewController&gt;"
+                  moduleName = "maeda-coin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yukinocist/mypkg/maeda-coin-client/maeda-coin/Modules/RegisterUserViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C73B0B01-676C-46FB-83D8-5539BB464CCC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "maeda-coin/Modules/RegisterUserViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

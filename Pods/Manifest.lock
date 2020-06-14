@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.0.4)
+  - MercariQRScanner (1.6)
   - PromiseKit (6.13.1):
     - PromiseKit/CorePromise (= 6.13.1)
     - PromiseKit/Foundation (= 6.13.1)
@@ -13,20 +14,23 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.0)
+  - MercariQRScanner
   - PromiseKit (~> 6.8)
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - MercariQRScanner
     - PromiseKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 0fe5fd24b4298dc377a6550da7d5f1b30e286fcb
+  MercariQRScanner: e1ee83878c2b4606661afa72d54af82bb6e355aa
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: b3b4700adb5428f4b27ca388b690c995c3bc60ed
+PODFILE CHECKSUM: faf6e9170c61888fb42c4a31bef419656b2aac8e
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

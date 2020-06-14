@@ -9,5 +9,6 @@ target 'maeda-coin' do
   pod 'Alamofire', '~> 5.0'
   pod "SwiftyJSON"
   pod "PromiseKit", "~> 6.8"
+  pod 'MercariQRScanner'
 
 end

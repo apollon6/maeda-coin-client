@@ -260,21 +260,175 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPs-Nm-8zA">
-                                <rect key="frame" x="184" y="251" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="支払う"/>
-                                <connections>
-                                    <segue destination="odk-xI-pke" kind="show" id="C82-T3-ot7"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufL-CK-H5d">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaT-P4-ZSG">
+                                        <rect key="frame" x="0.0" y="1" width="414" height="90"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="残高" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfT-LL-PDc">
+                                                <rect key="frame" x="91" y="58" width="32" height="16"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="残高の表示用ラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJf-8D-ehi">
+                                                <rect key="frame" x="135" y="58" width="144" height="16"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ニックネームの表示用ラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTN-KY-Y1x">
+                                                <rect key="frame" x="8" y="10" width="208" height="16"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="tTN-KY-Y1x" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="top" constant="10" id="2O1-0y-ZmQ"/>
+                                            <constraint firstItem="cfT-LL-PDc" firstAttribute="top" secondItem="tTN-KY-Y1x" secondAttribute="bottom" constant="32" id="3ed-Ew-tJr"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tTN-KY-Y1x" secondAttribute="trailing" constant="20" symbolic="YES" id="5hI-KK-zGc"/>
+                                            <constraint firstItem="YJf-8D-ehi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cfT-LL-PDc" secondAttribute="trailing" symbolic="YES" id="796-MY-o0E"/>
+                                            <constraint firstItem="YJf-8D-ehi" firstAttribute="top" secondItem="tTN-KY-Y1x" secondAttribute="bottom" constant="32" id="GEc-aN-GEq"/>
+                                            <constraint firstItem="tTN-KY-Y1x" firstAttribute="leading" secondItem="HaT-P4-ZSG" secondAttribute="leading" constant="8" id="Izk-mR-1PU"/>
+                                            <constraint firstItem="YJf-8D-ehi" firstAttribute="centerX" secondItem="HaT-P4-ZSG" secondAttribute="centerX" id="QAg-AX-WnX"/>
+                                            <constraint firstAttribute="bottom" secondItem="YJf-8D-ehi" secondAttribute="bottom" constant="16" id="UGy-QL-LP2"/>
+                                            <constraint firstAttribute="bottom" secondItem="cfT-LL-PDc" secondAttribute="bottom" constant="16" id="eta-yA-QVb"/>
+                                            <constraint firstItem="cfT-LL-PDc" firstAttribute="leading" secondItem="HaT-P4-ZSG" secondAttribute="leading" constant="91" id="jrz-1c-tcW"/>
+                                            <constraint firstAttribute="height" constant="90" id="nNb-Dc-yjf"/>
+                                            <constraint firstItem="tTN-KY-Y1x" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="top" constant="10" id="qwA-0d-fQs"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZ1-J3-1TD">
+                                        <rect key="frame" x="205" y="111" width="4" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="4" id="a38-Bk-whv"/>
+                                            <constraint firstAttribute="height" constant="112" id="sph-SB-XSa"/>
+                                        </constraints>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mED-7S-c80" userLabel="支払い">
+                                        <rect key="frame" x="4" y="111" width="201" height="112"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="oVp-bC-eVF"/>
+                                        </constraints>
+                                        <state key="normal" title="支払い &gt;" image="settlement_icon">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="odk-xI-pke" kind="show" id="ubf-p8-gvH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzj-Av-C2j" userLabel="送金">
+                                        <rect key="frame" x="209" y="111" width="201" height="112"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="33Z-5v-jSf"/>
+                                        </constraints>
+                                        <state key="normal" title="支払い &gt;" image="transfer_icon">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTw-gv-VYG" userLabel="友だち管理">
+                                        <rect key="frame" x="209" y="227" width="201" height="112"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="RU5-2E-QOf"/>
+                                        </constraints>
+                                        <state key="normal" title="支払い &gt;" image="friends_icon">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNh-JW-CJ2">
+                                        <rect key="frame" x="205" y="227" width="4" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="4" id="23K-EZ-QcT"/>
+                                            <constraint firstAttribute="height" constant="112" id="xel-dL-mF8"/>
+                                        </constraints>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRF-fw-ela" userLabel="チャージ">
+                                        <rect key="frame" x="4" y="227" width="201" height="112"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="7Ti-B2-K27"/>
+                                        </constraints>
+                                        <state key="normal" title="支払い &gt;" image="charge_icon">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0D-6z-VZH" userLabel="各種手続">
+                                        <rect key="frame" x="4" y="343" width="201" height="112"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="4kH-PK-FVP"/>
+                                        </constraints>
+                                        <state key="normal" title="支払い &gt;" image="procedure_icon">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycr-sp-c6p">
+                                        <rect key="frame" x="205" y="343" width="4" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="eAJ-ff-L4j"/>
+                                            <constraint firstAttribute="width" constant="4" id="gaZ-sc-m8H"/>
+                                        </constraints>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fNh-JW-CJ2" firstAttribute="top" secondItem="wZ1-J3-1TD" secondAttribute="bottom" constant="4" id="1CB-bz-oDZ"/>
+                                    <constraint firstItem="mzj-Av-C2j" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="bottom" constant="20" id="1IU-ak-rFZ"/>
+                                    <constraint firstItem="Ycr-sp-c6p" firstAttribute="top" secondItem="fTw-gv-VYG" secondAttribute="bottom" constant="4" id="2dX-SZ-Ygi"/>
+                                    <constraint firstItem="wZ1-J3-1TD" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="bottom" constant="20" id="46L-3w-ADw"/>
+                                    <constraint firstItem="Ycr-sp-c6p" firstAttribute="leading" secondItem="t0D-6z-VZH" secondAttribute="trailing" id="61U-1x-ug0"/>
+                                    <constraint firstItem="qRF-fw-ela" firstAttribute="leading" secondItem="ufL-CK-H5d" secondAttribute="leading" constant="4" id="6k3-I3-KvZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="HaT-P4-ZSG" secondAttribute="trailing" id="BqQ-M1-Db6"/>
+                                    <constraint firstAttribute="trailing" secondItem="fTw-gv-VYG" secondAttribute="trailing" constant="4" id="Cl3-xn-0qV"/>
+                                    <constraint firstItem="HaT-P4-ZSG" firstAttribute="leading" secondItem="ufL-CK-H5d" secondAttribute="leading" id="Fvt-DJ-gVY"/>
+                                    <constraint firstItem="wZ1-J3-1TD" firstAttribute="centerX" secondItem="ufL-CK-H5d" secondAttribute="centerX" id="I6I-AW-q3l"/>
+                                    <constraint firstItem="qRF-fw-ela" firstAttribute="top" secondItem="mED-7S-c80" secondAttribute="bottom" constant="4" id="Mun-Wz-hud"/>
+                                    <constraint firstItem="wZ1-J3-1TD" firstAttribute="leading" secondItem="mED-7S-c80" secondAttribute="trailing" id="N1a-og-9hL"/>
+                                    <constraint firstAttribute="trailing" secondItem="HaT-P4-ZSG" secondAttribute="trailing" id="Nwq-wl-DNq"/>
+                                    <constraint firstItem="t0D-6z-VZH" firstAttribute="top" secondItem="qRF-fw-ela" secondAttribute="bottom" constant="4" id="RX7-o1-hb6"/>
+                                    <constraint firstItem="mED-7S-c80" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="bottom" constant="20" id="U4L-VO-v3d"/>
+                                    <constraint firstItem="fNh-JW-CJ2" firstAttribute="leading" secondItem="qRF-fw-ela" secondAttribute="trailing" id="WK0-MW-0Z3"/>
+                                    <constraint firstItem="HaT-P4-ZSG" firstAttribute="top" secondItem="ufL-CK-H5d" secondAttribute="top" constant="1" id="ZtY-Oy-4rk"/>
+                                    <constraint firstItem="fTw-gv-VYG" firstAttribute="top" secondItem="mzj-Av-C2j" secondAttribute="bottom" constant="4" id="bnS-BQ-EIt"/>
+                                    <constraint firstAttribute="trailing" secondItem="mzj-Av-C2j" secondAttribute="trailing" constant="4" id="cDh-yy-EpZ"/>
+                                    <constraint firstItem="fNh-JW-CJ2" firstAttribute="centerX" secondItem="ufL-CK-H5d" secondAttribute="centerX" id="eo3-eo-UED"/>
+                                    <constraint firstItem="fTw-gv-VYG" firstAttribute="leading" secondItem="fNh-JW-CJ2" secondAttribute="trailing" id="g8U-Zt-JBv"/>
+                                    <constraint firstItem="Ycr-sp-c6p" firstAttribute="centerX" secondItem="ufL-CK-H5d" secondAttribute="centerX" id="hR2-Hp-avy"/>
+                                    <constraint firstItem="HaT-P4-ZSG" firstAttribute="leading" secondItem="ufL-CK-H5d" secondAttribute="leading" id="hz4-K5-D84"/>
+                                    <constraint firstItem="t0D-6z-VZH" firstAttribute="leading" secondItem="ufL-CK-H5d" secondAttribute="leading" constant="4" id="j50-Cg-AKT"/>
+                                    <constraint firstItem="mzj-Av-C2j" firstAttribute="leading" secondItem="wZ1-J3-1TD" secondAttribute="trailing" id="lYc-Sd-uyL"/>
+                                    <constraint firstItem="mED-7S-c80" firstAttribute="leading" secondItem="ufL-CK-H5d" secondAttribute="leading" constant="4" id="q20-3R-GvG"/>
+                                    <constraint firstItem="HaT-P4-ZSG" firstAttribute="top" secondItem="ufL-CK-H5d" secondAttribute="top" constant="1" id="si3-hk-AVi"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ufL-CK-H5d" firstAttribute="bottom" secondItem="cgJ-hL-yrd" secondAttribute="bottom" id="1IY-x7-85s"/>
+                            <constraint firstItem="ufL-CK-H5d" firstAttribute="trailing" secondItem="cgJ-hL-yrd" secondAttribute="trailing" id="UDR-l5-aVN"/>
+                            <constraint firstItem="ufL-CK-H5d" firstAttribute="top" secondItem="cgJ-hL-yrd" secondAttribute="top" id="ghF-ra-ASV"/>
+                            <constraint firstItem="ufL-CK-H5d" firstAttribute="leading" secondItem="cgJ-hL-yrd" secondAttribute="leading" id="yU2-vx-dYn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cgJ-hL-yrd"/>
                     </view>
                     <navigationItem key="navigationItem" title="Top" id="LEJ-xh-6k2">
                         <barButtonItem key="backBarButtonItem" title="戻る" id="n4o-Qc-SZG"/>
+                        <barButtonItem key="rightBarButtonItem" title="ログアウト" id="fCH-XJ-7rS">
+                            <connections>
+                                <action selector="pushLogout:" destination="goF-Cb-INJ" id="WWJ-dC-vNX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="balanceLabel" destination="YJf-8D-ehi" id="P00-x4-ocH"/>
+                        <outlet property="nicknameLabel" destination="tTN-KY-Y1x" id="Ld7-to-tSe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78V-Cv-aXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -284,12 +438,6 @@
         <scene sceneID="IJ6-TX-ZmN">
             <objects>
                 <viewController id="odk-xI-pke" customClass="ScanSettlementQRCodeViewController" customModule="maeda_coin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PMl-WP-0Dn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="vti-HP-YAn"/>
-                    </view>
                     <navigationItem key="navigationItem" title="読み取り" id="9FS-xB-FlQ">
                         <barButtonItem key="backBarButtonItem" title="戻る" id="39D-Gl-gIJ"/>
                     </navigationItem>
@@ -349,6 +497,7 @@
                             <constraint firstItem="yhg-N5-WBi" firstAttribute="top" secondItem="eSd-nh-bri" secondAttribute="top" constant="20" id="STq-8t-PSo"/>
                             <constraint firstItem="883-ai-gYI" firstAttribute="top" secondItem="yhg-N5-WBi" secondAttribute="bottom" constant="26" id="YV7-u7-1jv"/>
                             <constraint firstItem="bST-oU-DlA" firstAttribute="top" secondItem="883-ai-gYI" secondAttribute="bottom" constant="8" id="bWI-Ro-bl3"/>
+                            <constraint firstItem="eSd-nh-bri" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="883-ai-gYI" secondAttribute="trailing" symbolic="YES" id="gdm-Id-ibU"/>
                             <constraint firstItem="yhg-N5-WBi" firstAttribute="leading" secondItem="eSd-nh-bri" secondAttribute="leading" constant="20" id="iFD-tn-LXG"/>
                             <constraint firstItem="eSd-nh-bri" firstAttribute="trailing" secondItem="eDo-wL-DD7" secondAttribute="trailing" constant="25" id="p56-kb-hYb"/>
                             <constraint firstItem="eSd-nh-bri" firstAttribute="trailing" secondItem="bST-oU-DlA" secondAttribute="trailing" constant="20" id="rxj-83-z0O"/>
@@ -464,4 +613,11 @@
             <point key="canvasLocation" x="1039" y="800"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="charge_icon" width="605" height="336"/>
+        <image name="friends_icon" width="605" height="336"/>
+        <image name="procedure_icon" width="605" height="336"/>
+        <image name="settlement_icon" width="605" height="336"/>
+        <image name="transfer_icon" width="605" height="336"/>
+    </resources>
 </document>

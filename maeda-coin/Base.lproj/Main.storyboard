@@ -308,7 +308,7 @@
                                             <constraint firstAttribute="height" constant="112" id="sph-SB-XSa"/>
                                         </constraints>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mED-7S-c80" userLabel="支払い">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mED-7S-c80" userLabel="支払い">
                                         <rect key="frame" x="4" y="111" width="201" height="112"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -321,7 +321,7 @@
                                             <segue destination="odk-xI-pke" kind="show" id="ubf-p8-gvH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzj-Av-C2j" userLabel="送金">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzj-Av-C2j" userLabel="送金">
                                         <rect key="frame" x="209" y="111" width="201" height="112"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -331,13 +331,13 @@
                                             <attributedString key="attributedTitle"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTw-gv-VYG" userLabel="友だち管理">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTw-gv-VYG" userLabel="取引履歴">
                                         <rect key="frame" x="209" y="227" width="201" height="112"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="112" id="RU5-2E-QOf"/>
                                         </constraints>
-                                        <state key="normal" title="支払い &gt;" image="friends_icon">
+                                        <state key="normal" title="支払い &gt;" image="transactions_icon">
                                             <attributedString key="attributedTitle"/>
                                         </state>
                                     </button>
@@ -358,13 +358,13 @@
                                             <attributedString key="attributedTitle"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0D-6z-VZH" userLabel="各種手続">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0D-6z-VZH" userLabel="友だち管理">
                                         <rect key="frame" x="4" y="343" width="201" height="112"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="112" id="4kH-PK-FVP"/>
                                         </constraints>
-                                        <state key="normal" title="支払い &gt;" image="procedure_icon">
+                                        <state key="normal" title="支払い &gt;" image="friends_icon">
                                             <attributedString key="attributedTitle"/>
                                         </state>
                                     </button>
@@ -375,6 +375,16 @@
                                             <constraint firstAttribute="width" constant="4" id="gaZ-sc-m8H"/>
                                         </constraints>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPg-D1-9Oz" userLabel="各種手続">
+                                        <rect key="frame" x="209" y="343" width="201" height="112"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="SIc-NH-uWQ"/>
+                                        </constraints>
+                                        <state key="normal" title="支払い &gt;" image="procedure_icon">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -382,7 +392,9 @@
                                     <constraint firstItem="mzj-Av-C2j" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="bottom" constant="20" id="1IU-ak-rFZ"/>
                                     <constraint firstItem="Ycr-sp-c6p" firstAttribute="top" secondItem="fTw-gv-VYG" secondAttribute="bottom" constant="4" id="2dX-SZ-Ygi"/>
                                     <constraint firstItem="wZ1-J3-1TD" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="bottom" constant="20" id="46L-3w-ADw"/>
+                                    <constraint firstItem="OPg-D1-9Oz" firstAttribute="leading" secondItem="Ycr-sp-c6p" secondAttribute="trailing" id="5wS-4Z-h5Y"/>
                                     <constraint firstItem="Ycr-sp-c6p" firstAttribute="leading" secondItem="t0D-6z-VZH" secondAttribute="trailing" id="61U-1x-ug0"/>
+                                    <constraint firstItem="OPg-D1-9Oz" firstAttribute="top" secondItem="fTw-gv-VYG" secondAttribute="bottom" constant="4" id="6fa-s8-NoN"/>
                                     <constraint firstItem="qRF-fw-ela" firstAttribute="leading" secondItem="ufL-CK-H5d" secondAttribute="leading" constant="4" id="6k3-I3-KvZ"/>
                                     <constraint firstAttribute="trailing" secondItem="HaT-P4-ZSG" secondAttribute="trailing" id="BqQ-M1-Db6"/>
                                     <constraint firstAttribute="trailing" secondItem="fTw-gv-VYG" secondAttribute="trailing" constant="4" id="Cl3-xn-0qV"/>
@@ -394,6 +406,7 @@
                                     <constraint firstItem="t0D-6z-VZH" firstAttribute="top" secondItem="qRF-fw-ela" secondAttribute="bottom" constant="4" id="RX7-o1-hb6"/>
                                     <constraint firstItem="mED-7S-c80" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="bottom" constant="20" id="U4L-VO-v3d"/>
                                     <constraint firstItem="fNh-JW-CJ2" firstAttribute="leading" secondItem="qRF-fw-ela" secondAttribute="trailing" id="WK0-MW-0Z3"/>
+                                    <constraint firstAttribute="trailing" secondItem="OPg-D1-9Oz" secondAttribute="trailing" constant="4" id="X4b-S0-YW7"/>
                                     <constraint firstItem="HaT-P4-ZSG" firstAttribute="top" secondItem="ufL-CK-H5d" secondAttribute="top" constant="1" id="ZtY-Oy-4rk"/>
                                     <constraint firstItem="fTw-gv-VYG" firstAttribute="top" secondItem="mzj-Av-C2j" secondAttribute="bottom" constant="4" id="bnS-BQ-EIt"/>
                                     <constraint firstAttribute="trailing" secondItem="mzj-Av-C2j" secondAttribute="trailing" constant="4" id="cDh-yy-EpZ"/>
@@ -618,6 +631,7 @@
         <image name="friends_icon" width="605" height="336"/>
         <image name="procedure_icon" width="605" height="336"/>
         <image name="settlement_icon" width="605" height="336"/>
+        <image name="transactions_icon" width="605" height="336"/>
         <image name="transfer_icon" width="605" height="336"/>
     </resources>
 </document>

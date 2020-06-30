@@ -266,39 +266,29 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaT-P4-ZSG">
                                         <rect key="frame" x="0.0" y="1" width="414" height="90"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="残高" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfT-LL-PDc">
-                                                <rect key="frame" x="91" y="58" width="32" height="16"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
-                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="残高の表示用ラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJf-8D-ehi">
-                                                <rect key="frame" x="135" y="58" width="144" height="16"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="残高の表示用ラベル" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJf-8D-ehi">
+                                                <rect key="frame" x="25" y="55" width="364" height="20"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ニックネームの表示用ラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTN-KY-Y1x">
-                                                <rect key="frame" x="8" y="10" width="208" height="16"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                <rect key="frame" x="25" y="15" width="364" height="20"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="tTN-KY-Y1x" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="top" constant="10" id="2O1-0y-ZmQ"/>
-                                            <constraint firstItem="cfT-LL-PDc" firstAttribute="top" secondItem="tTN-KY-Y1x" secondAttribute="bottom" constant="32" id="3ed-Ew-tJr"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tTN-KY-Y1x" secondAttribute="trailing" constant="20" symbolic="YES" id="5hI-KK-zGc"/>
-                                            <constraint firstItem="YJf-8D-ehi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cfT-LL-PDc" secondAttribute="trailing" symbolic="YES" id="796-MY-o0E"/>
-                                            <constraint firstItem="YJf-8D-ehi" firstAttribute="top" secondItem="tTN-KY-Y1x" secondAttribute="bottom" constant="32" id="GEc-aN-GEq"/>
-                                            <constraint firstItem="tTN-KY-Y1x" firstAttribute="leading" secondItem="HaT-P4-ZSG" secondAttribute="leading" constant="8" id="Izk-mR-1PU"/>
-                                            <constraint firstItem="YJf-8D-ehi" firstAttribute="centerX" secondItem="HaT-P4-ZSG" secondAttribute="centerX" id="QAg-AX-WnX"/>
-                                            <constraint firstAttribute="bottom" secondItem="YJf-8D-ehi" secondAttribute="bottom" constant="16" id="UGy-QL-LP2"/>
-                                            <constraint firstAttribute="bottom" secondItem="cfT-LL-PDc" secondAttribute="bottom" constant="16" id="eta-yA-QVb"/>
-                                            <constraint firstItem="cfT-LL-PDc" firstAttribute="leading" secondItem="HaT-P4-ZSG" secondAttribute="leading" constant="91" id="jrz-1c-tcW"/>
+                                            <constraint firstItem="tTN-KY-Y1x" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="top" constant="15" id="3m1-T8-n1w"/>
+                                            <constraint firstAttribute="bottom" secondItem="YJf-8D-ehi" secondAttribute="bottom" constant="15" id="DV0-xr-umx"/>
+                                            <constraint firstAttribute="trailing" secondItem="YJf-8D-ehi" secondAttribute="trailing" constant="25" id="OSn-3M-DOm"/>
+                                            <constraint firstItem="tTN-KY-Y1x" firstAttribute="leading" secondItem="HaT-P4-ZSG" secondAttribute="leading" constant="25" id="V98-ua-OF1"/>
+                                            <constraint firstItem="YJf-8D-ehi" firstAttribute="top" secondItem="tTN-KY-Y1x" secondAttribute="bottom" constant="20" id="alU-pS-j2b"/>
+                                            <constraint firstAttribute="trailing" secondItem="tTN-KY-Y1x" secondAttribute="trailing" constant="25" id="dLw-m5-KtD"/>
                                             <constraint firstAttribute="height" constant="90" id="nNb-Dc-yjf"/>
-                                            <constraint firstItem="tTN-KY-Y1x" firstAttribute="top" secondItem="HaT-P4-ZSG" secondAttribute="top" constant="10" id="qwA-0d-fQs"/>
+                                            <constraint firstItem="YJf-8D-ehi" firstAttribute="leading" secondItem="HaT-P4-ZSG" secondAttribute="leading" constant="25" id="wc8-6B-Hjt"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZ1-J3-1TD">

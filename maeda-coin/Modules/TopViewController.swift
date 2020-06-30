@@ -13,6 +13,18 @@ class TopViewController: UIViewController {
     @IBOutlet weak var nicknameLabel: UILabel!
     
     @IBOutlet weak var balanceLabel: UILabel!
+    
+    @IBOutlet weak var settlementButton: UIButton!
+    
+    @IBOutlet weak var transferButton: UIButton!
+    
+    @IBOutlet weak var chargeButton: UIButton!
+    
+    @IBOutlet weak var transactionsButton: UIButton!
+    
+    @IBOutlet weak var friendsButton: UIButton!
+    
+    @IBOutlet weak var procedureButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +39,13 @@ class TopViewController: UIViewController {
         let loginUser = LoginUser.instance
         guard let userId = loginUser.userId else { return }
         print(userId)
+        
+        settlementButton.imageView?.contentMode = .scaleAspectFit
+        transferButton.imageView?.contentMode = .scaleAspectFit
+        chargeButton.imageView?.contentMode = .scaleAspectFit
+        transactionsButton.imageView?.contentMode = .scaleAspectFit
+        friendsButton.imageView?.contentMode = .scaleAspectFit
+        procedureButton.imageView?.contentMode = .scaleAspectFit
     }
     
     @IBAction func pushLogout(_ sender: Any) {

@@ -440,7 +440,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="balanceLabel" destination="YJf-8D-ehi" id="P00-x4-ocH"/>
+                        <outlet property="chargeButton" destination="qRF-fw-ela" id="Dev-Vc-jA5"/>
+                        <outlet property="friendsButton" destination="t0D-6z-VZH" id="qdK-7H-OSs"/>
                         <outlet property="nicknameLabel" destination="tTN-KY-Y1x" id="Ld7-to-tSe"/>
+                        <outlet property="procedureButton" destination="OPg-D1-9Oz" id="QpE-Lq-1g5"/>
+                        <outlet property="settlementButton" destination="mED-7S-c80" id="IYG-KQ-sLp"/>
+                        <outlet property="transactionsButton" destination="fTw-gv-VYG" id="Ygv-ZX-MLD"/>
+                        <outlet property="transferButton" destination="mzj-Av-C2j" id="w6h-up-ogM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78V-Cv-aXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

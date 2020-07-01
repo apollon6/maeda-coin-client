@@ -26,6 +26,7 @@ class ScanSettlementQRCodeViewController: UIViewController, QRScannerViewDelegat
     }
     
     func qrScannerView(_ qrScannerView: QRScannerView, didFailure error: QRScannerError) {
+        qrScannerView.stopRunning()
         let alert: UIAlertController = UIAlertController(title: "エラー", message: "QRコードの読み取りに失敗しました。恐れ入りますが、もう一度お試しください。", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{(action: UIAlertAction!) in
             qrScannerView.rescan()

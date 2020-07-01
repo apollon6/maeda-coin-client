@@ -26,7 +26,14 @@ class ScanSettlementQRCodeViewController: UIViewController, QRScannerViewDelegat
     }
     
     func qrScannerView(_ qrScannerView: QRScannerView, didFailure error: QRScannerError) {
-        print(error)
+        let alert: UIAlertController = UIAlertController(title: "エラー", message: "QRコードの読み取りに失敗しました。恐れ入りますが、もう一度お試しください。", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{(action: UIAlertAction!) in
+            qrScannerView.rescan()
+            qrScannerView.startRunning()
+        })
+        alert.addAction(okAction)
+        present(alert, animated: true)
+        return
     }
 
     func qrScannerView(_ qrScannerView: QRScannerView, didSuccess code: String) {
@@ -34,6 +41,16 @@ class ScanSettlementQRCodeViewController: UIViewController, QRScannerViewDelegat
         qrScannerView.stopRunning()
         
         /* QRコードの妥当性チェック */
+        if (false) {
+            let alert: UIAlertController = UIAlertController(title: "エラー", message: "このQRコードの形式はサポートされていません。", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{(action: UIAlertAction!) in
+                qrScannerView.rescan()
+                qrScannerView.startRunning()
+            })
+            alert.addAction(okAction)
+            present(alert, animated: true)
+            return
+        }
         
         /* チェックOKだったら確認画面に遷移 */
         let storyboard = self.storyboard!
